@@ -127,6 +127,20 @@ footer .flogo{font-family:'Fraunces',serif;color:var(--ivory);font-size:20px;mar
 .reveal.show{opacity:1;transform:translateY(0);}
 
 @media(max-width:900px){
+  form{padding:32px;}
+  section{padding:80px 0;}
+}
+
+@media(max-width:600px){
+  .wrap{padding:0 16px;}
+  section{padding:60px 0;}
+  form{padding:24px;}
+  .hero-actions{flex-direction:column;gap:12px;}
+  .btn-primary,.btn-ghost{width:100%;text-align:center;}
+  .contact-grid{grid-template-columns:1fr;}
+}
+
+@media(max-width:900px){
   .navlinks{display:none;}
   .burger{display:flex;}
   .search-bar{grid-template-columns:1fr 1fr;}
