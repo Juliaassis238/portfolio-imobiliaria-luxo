@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head><link as_="image" href="hero.webp" rel="preload"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Aurea Imóveis — Curadoria de Endereços Extraordinários</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preload" as="image" href="capa_nova.webp">
-<link rel="preload" as="image" href="hero.webp">
-<link rel="preload" as="image" href="img_0.webp">
-<link rel="preload" as="image" href="img_1.webp">
-<link rel="preload" as="image" href="img_2.webp">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link as="image" href="capa_nova.webp" rel="preload"/>
+<link as="image" href="hero.webp" rel="preload"/>
+<link as="image" href="img_0.webp" rel="preload"/>
+<link as="image" href="img_1.webp" rel="preload"/>
+<link as="image" href="img_2.webp" rel="preload"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
   img { opacity: 1; transition: opacity 0.5s ease-in; }
   img.loaded { opacity: 1; }
@@ -201,139 +202,130 @@ footer .flogo{font-family:'Fraunces',serif;color:var(--ivory);font-size:20px;mar
 </style>
 </head>
 <body>
-
 <header id="header">
-  <div class="wrap">
-    <nav>
-      <div class="logo">Aurea <i>Imóveis</i></div>
-      <div class="navlinks">
-        <a href="#imoveis">Imóveis</a>
-        <a href="#sobre">Por que a Aurea</a>
-        <a href="#regioes">Regiões</a>
-        <a href="#contato" class="navcta">Falar com consultor</a>
-      </div>
-      <div class="burger"><span></span><span></span><span></span></div>
-    </nav>
-  </div>
+<div class="wrap">
+<nav>
+<div class="logo">Aurea <i>Imóveis</i></div>
+<div class="navlinks">
+<a href="#imoveis">Imóveis</a>
+<a href="#sobre">Por que a Aurea</a>
+<a href="#regioes">Regiões</a>
+<a class="navcta" href="#contato">Falar com consultor</a>
+</div>
+<div class="burger"><span></span><span></span><span></span></div>
+</nav>
+</div>
 </header>
-
 <section class="hero">
-  <div class="hero-bgimg"></div>
-  <div class="wrap hero-content">
-    <div class="eyebrow">Curadoria imobiliária de alto padrão</div>
-    <h1>Endereços que se tornam <i>parte</i> da sua história.</h1>
-    <p>Selecionamos e negociamos os imóveis mais exclusivos da cidade, com discrição, dados de mercado e acompanhamento em cada etapa da transação.</p>
-    <div class="hero-actions">
-      <a href="#imoveis" class="btn-primary">Ver imóveis em destaque</a>
-      <a href="#contato" class="btn-ghost">Falar com um consultor</a>
-    </div>
-    <div class="search-bar">
-      <div class="f"><label>Localização</label><input type="text" placeholder="Bairro ou cidade"></div>
-      <div class="f"><label>Tipo</label><select><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Terreno</option></select></div>
-      <div class="f"><label>Faixa de valor</label><select><option>R$ 1M – 3M</option><option>R$ 3M – 6M</option><option>R$ 6M – 15M</option><option>Acima de R$ 15M</option></select></div>
-      <button>Buscar</button>
-    </div>
-  </div>
+<div class="hero-bgimg"></div>
+<div class="wrap hero-content">
+<div class="eyebrow">Curadoria imobiliária de alto padrão</div>
+<h1>Endereços que se tornam <i>parte</i> da sua história.</h1>
+<p>Selecionamos e negociamos os imóveis mais exclusivos da cidade, com discrição, dados de mercado e acompanhamento em cada etapa da transação.</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#imoveis">Ver imóveis em destaque</a>
+<a class="btn-ghost" href="#contato">Falar com um consultor</a>
+</div>
+<div class="search-bar">
+<div class="f"><label>Localização</label><input placeholder="Bairro ou cidade" type="text"/></div>
+<div class="f"><label>Tipo</label><select><option>Apartamento</option><option>Casa</option><option>Cobertura</option><option>Terreno</option></select></div>
+<div class="f"><label>Faixa de valor</label><select><option>R$ 1M – 3M</option><option>R$ 3M – 6M</option><option>R$ 6M – 15M</option><option>Acima de R$ 15M</option></select></div>
+<button>Buscar</button>
+</div>
+</div>
 </section>
-
 <section id="imoveis">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Imóveis selecionados pela nossa curadoria.</h2>
-      <p>Cada propriedade em nosso portfólio passa por avaliação técnica e visita presencial da equipe Aurea.</p>
-    </div>
-    <div class="prop-carousel" id="propCarousel">
-      <div class="prop-card">
-        <div class="imgwrap"><img decoding="async" fetchpriority="high" src="hero.webp" alt="Cobertura duplex"><div class="prop-tag">Cobertura</div><div class="prop-price">R$ 8,4M</div></div>
-        <div class="prop-body"><h3>Cobertura Duplex Jardins</h3><div class="loc">Jardim Paulista, São Paulo</div><div class="prop-specs"><span>420 m²</span><span>4 suítes</span><span>5 vagas</span></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="imgwrap"><img decoding="async" fetchpriority="high" src="img_0.webp" alt="Casa contemporânea"><div class="prop-tag">Casa</div><div class="prop-price">R$ 12,9M</div></div>
-        <div class="prop-body"><h3>Residência Alto de Pinheiros</h3><div class="loc">Alto de Pinheiros, São Paulo</div><div class="prop-specs"><span>680 m²</span><span>5 suítes</span><span>6 vagas</span></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="imgwrap"><img decoding="async" loading="lazy" src="img_1.webp" alt="Mansão com piscina"><div class="prop-tag">Mansão</div><div class="prop-price">R$ 24,5M</div></div>
-        <div class="prop-body"><h3>Villa Granja Viana</h3><div class="loc">Granja Viana, Cotia</div><div class="prop-specs"><span>1.200 m²</span><span>6 suítes</span><span>8 vagas</span></div></div>
-      </div>
-      <div class="prop-card">
-        <div class="imgwrap"><img decoding="async" loading="lazy" src="img_2.webp" alt="Apartamento de alto padrão"><div class="prop-tag">Apartamento</div><div class="prop-price">R$ 5,2M</div></div>
-        <div class="prop-body"><h3>Residencial Vila Nova</h3><div class="loc">Vila Nova Conceição, São Paulo</div><div class="prop-specs"><span>210 m²</span><span>3 suítes</span><span>3 vagas</span></div></div>
-      </div>
-    </div>
-    <div class="carousel-nav">
-      <button onclick="scrollProp(-1)">&larr;</button>
-      <button onclick="scrollProp(1)">&rarr;</button>
-    </div>
-  </div>
+<div class="wrap">
+<div class="section-head reveal">
+<h2>Imóveis selecionados pela nossa curadoria.</h2>
+<p>Cada propriedade em nosso portfólio passa por avaliação técnica e visita presencial da equipe Aurea.</p>
+</div>
+<div class="prop-carousel" id="propCarousel">
+<div class="prop-card">
+<div class="imgwrap"><img alt="Cobertura duplex" decoding="async" fetchpriority="high" loading="eager" src="hero.webp"/><div class="prop-tag">Cobertura</div><div class="prop-price">R$ 8,4M</div></div>
+<div class="prop-body"><h3>Cobertura Duplex Jardins</h3><div class="loc">Jardim Paulista, São Paulo</div><div class="prop-specs"><span>420 m²</span><span>4 suítes</span><span>5 vagas</span></div></div>
+</div>
+<div class="prop-card">
+<div class="imgwrap"><img alt="Casa contemporânea" decoding="async" fetchpriority="high" loading="lazy" src="img_0.webp"/><div class="prop-tag">Casa</div><div class="prop-price">R$ 12,9M</div></div>
+<div class="prop-body"><h3>Residência Alto de Pinheiros</h3><div class="loc">Alto de Pinheiros, São Paulo</div><div class="prop-specs"><span>680 m²</span><span>5 suítes</span><span>6 vagas</span></div></div>
+</div>
+<div class="prop-card">
+<div class="imgwrap"><img alt="Mansão com piscina" decoding="async" loading="lazy" src="img_1.webp"/><div class="prop-tag">Mansão</div><div class="prop-price">R$ 24,5M</div></div>
+<div class="prop-body"><h3>Villa Granja Viana</h3><div class="loc">Granja Viana, Cotia</div><div class="prop-specs"><span>1.200 m²</span><span>6 suítes</span><span>8 vagas</span></div></div>
+</div>
+<div class="prop-card">
+<div class="imgwrap"><img alt="Apartamento de alto padrão" decoding="async" loading="lazy" src="img_2.webp"/><div class="prop-tag">Apartamento</div><div class="prop-price">R$ 5,2M</div></div>
+<div class="prop-body"><h3>Residencial Vila Nova</h3><div class="loc">Vila Nova Conceição, São Paulo</div><div class="prop-specs"><span>210 m²</span><span>3 suítes</span><span>3 vagas</span></div></div>
+</div>
+</div>
+<div class="carousel-nav">
+<button onclick="scrollProp(-1)">←</button>
+<button onclick="scrollProp(1)">→</button>
+</div>
+</div>
 </section>
-
 <section class="why" id="sobre">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>O que diferencia a curadoria Aurea.</h2>
-      <p>Não vendemos imóveis — construímos negociações sob medida.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why-item reveal"><h3>Portfólio exclusivo</h3><p>Acesso a imóveis fora do mercado aberto, via rede de relacionamento direta com proprietários.</p></div>
-      <div class="why-item reveal"><h3>Inteligência de mercado</h3><p>Análise comparativa de valorização por região antes de cada recomendação.</p></div>
-      <div class="why-item reveal"><h3>Discrição total</h3><p>Processos confidenciais para clientes que exigem privacidade nas negociações.</p></div>
-      <div class="why-item reveal"><h3>Suporte completo</h3><p>Da visita à assinatura, com apoio jurídico e financeiro integrado.</p></div>
-    </div>
-    <img decoding="async" loading="lazy" class="why-banner reveal" src="img_3.webp" alt="Interior de residência de alto padrão">
-  </div>
+<div class="wrap">
+<div class="section-head reveal">
+<h2>O que diferencia a curadoria Aurea.</h2>
+<p>Não vendemos imóveis — construímos negociações sob medida.</p>
+</div>
+<div class="why-grid">
+<div class="why-item reveal"><h3>Portfólio exclusivo</h3><p>Acesso a imóveis fora do mercado aberto, via rede de relacionamento direta com proprietários.</p></div>
+<div class="why-item reveal"><h3>Inteligência de mercado</h3><p>Análise comparativa de valorização por região antes de cada recomendação.</p></div>
+<div class="why-item reveal"><h3>Discrição total</h3><p>Processos confidenciais para clientes que exigem privacidade nas negociações.</p></div>
+<div class="why-item reveal"><h3>Suporte completo</h3><p>Da visita à assinatura, com apoio jurídico e financeiro integrado.</p></div>
+</div>
+<img alt="Interior de residência de alto padrão" class="why-banner reveal" decoding="async" loading="lazy" src="img_3.webp"/>
+</div>
 </section>
-
 <section id="regioes">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Regiões onde atuamos com profundidade.</h2>
-      <p>Especialistas locais em cada uma das áreas mais valorizadas da cidade.</p>
-    </div>
-    <div class="neigh-grid">
-      <div class="neigh-item n1 reveal"><img decoding="async" loading="lazy" src="img_4.webp" alt="Jardins"><div class="label">Jardins</div></div>
-      <div class="neigh-item reveal"><img decoding="async" loading="lazy" src="img_5.webp" alt="Vila Nova Conceição"><div class="label">Vila Nova Conceição</div></div>
-      <div class="neigh-item reveal"><img decoding="async" loading="lazy" src="img_6.webp" alt="Alto de Pinheiros"><div class="label">Alto de Pinheiros</div></div>
-      <div class="neigh-item reveal"><img decoding="async" loading="lazy" src="img_7.webp" alt="Granja Viana"><div class="label">Granja Viana</div></div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="section-head reveal">
+<h2>Regiões onde atuamos com profundidade.</h2>
+<p>Especialistas locais em cada uma das áreas mais valorizadas da cidade.</p>
+</div>
+<div class="neigh-grid">
+<div class="neigh-item n1 reveal"><img alt="Jardins" decoding="async" loading="lazy" src="img_4.webp"/><div class="label">Jardins</div></div>
+<div class="neigh-item reveal"><img alt="Vila Nova Conceição" decoding="async" loading="lazy" src="img_5.webp"/><div class="label">Vila Nova Conceição</div></div>
+<div class="neigh-item reveal"><img alt="Alto de Pinheiros" decoding="async" loading="lazy" src="img_6.webp"/><div class="label">Alto de Pinheiros</div></div>
+<div class="neigh-item reveal"><img alt="Granja Viana" decoding="async" loading="lazy" src="img_7.webp"/><div class="label">Granja Viana</div></div>
+</div>
+</div>
 </section>
-
 <section class="testi">
-  <div class="wrap t-wrap">
-    <div class="section-head reveal" style="margin:0 auto 40px;text-align:center;"><h2>Clientes que confiaram na nossa curadoria.</h2></div>
-    <div class="t-slide active"><div class="stars">★★★★★</div><p>"Encontraram um imóvel que não estava nem sequer anunciado. Rede de contatos impressionante."</p><div class="who">Renata B., compradora</div></div>
-    <div class="t-slide"><div class="stars">★★★★★</div><p>"Venderam nossa casa acima do valor esperado, com total discrição durante todo o processo."</p><div class="who">Família Oliveira</div></div>
-    <div class="t-slide"><div class="stars">★★★★★</div><p>"Acompanhamento impecável, da primeira visita até a assinatura do contrato."</p><div class="who">Guilherme S.</div></div>
-    <div class="dots" id="tdots"></div>
-  </div>
+<div class="wrap t-wrap">
+<div class="section-head reveal" style="margin:0 auto 40px;text-align:center;"><h2>Clientes que confiaram na nossa curadoria.</h2></div>
+<div class="t-slide active"><div class="stars">★★★★★</div><p>"Encontraram um imóvel que não estava nem sequer anunciado. Rede de contatos impressionante."</p><div class="who">Renata B., compradora</div></div>
+<div class="t-slide"><div class="stars">★★★★★</div><p>"Venderam nossa casa acima do valor esperado, com total discrição durante todo o processo."</p><div class="who">Família Oliveira</div></div>
+<div class="t-slide"><div class="stars">★★★★★</div><p>"Acompanhamento impecável, da primeira visita até a assinatura do contrato."</p><div class="who">Guilherme S.</div></div>
+<div class="dots" id="tdots"></div>
+</div>
 </section>
-
 <section id="contato">
-  <div class="wrap contact-grid">
-    <div class="contact-info reveal">
-      <h2>Vamos encontrar seu próximo endereço.</h2>
-      <p>Fale com um de nossos consultores especializados e receba uma seleção personalizada de imóveis.</p>
-      <div class="info-row"><b>Endereço</b> Rua Oscar Freire, 1500 — Jardins, São Paulo</div>
-      <div class="info-row"><b>Horário</b> Seg a Sáb — 09h às 19h</div>
-      <div class="info-row"><b>Contato</b> (11) 4090-2200 · contato@aureaimoveis.com.br</div>
-    </div>
-    <form onsubmit="event.preventDefault(); alert('Recebemos seu contato! Um consultor falará com você em breve.');">
-      <div class="field"><label>Nome completo</label><input type="text" required></div>
-      <div class="field"><label>Telefone</label><input type="text" required></div>
-      <div class="field"><label>Interesse</label><select><option>Comprar</option><option>Vender</option><option>Alugar</option><option>Avaliar imóvel</option></select></div>
-      <div class="field"><label>Mensagem</label><textarea rows="3"></textarea></div>
-      <button type="submit">Falar com consultor</button>
-    </form>
-  </div>
+<div class="wrap contact-grid">
+<div class="contact-info reveal">
+<h2>Vamos encontrar seu próximo endereço.</h2>
+<p>Fale com um de nossos consultores especializados e receba uma seleção personalizada de imóveis.</p>
+<div class="info-row"><b>Endereço</b> Rua Oscar Freire, 1500 — Jardins, São Paulo</div>
+<div class="info-row"><b>Horário</b> Seg a Sáb — 09h às 19h</div>
+<div class="info-row"><b>Contato</b> (11) 4090-2200 · contato@aureaimoveis.com.br</div>
+</div>
+<form onsubmit="event.preventDefault(); alert('Recebemos seu contato! Um consultor falará com você em breve.');">
+<div class="field"><label>Nome completo</label><input required="" type="text"/></div>
+<div class="field"><label>Telefone</label><input required="" type="text"/></div>
+<div class="field"><label>Interesse</label><select><option>Comprar</option><option>Vender</option><option>Alugar</option><option>Avaliar imóvel</option></select></div>
+<div class="field"><label>Mensagem</label><textarea rows="3"></textarea></div>
+<button type="submit">Falar com consultor</button>
+</form>
+</div>
 </section>
-
 <footer>
-  <div class="wrap">
-    <div class="flogo">Aurea Imóveis</div>
-    <p>© 2026 Aurea Imóveis. CRECI-SP 34.221-J.</p>
-  </div>
+<div class="wrap">
+<div class="flogo">Aurea Imóveis</div>
+<p>© 2026 Aurea Imóveis. CRECI-SP 34.221-J.</p>
+</div>
 </footer>
-
 <script>
 window.addEventListener('scroll',()=>{document.getElementById('header').classList.toggle('scrolled',window.scrollY>40);});
 const reveals=document.querySelectorAll('.reveal');
@@ -349,7 +341,6 @@ function showSlide(i){slides[cur].classList.remove('active');tdots.children[cur]
 setInterval(()=>showSlide((cur+1)%slides.length),5000);
 </script>
 <div style="text-align:center; padding:20px; color:#9fb5b1; font-size:12px; background:#082B29;">feito por Júlia Assis/ word tecnologia</div>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('img');
@@ -362,7 +353,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('img');
@@ -375,7 +365,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('img');
@@ -388,7 +377,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('img');
@@ -401,7 +389,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const images = document.querySelectorAll('img');
